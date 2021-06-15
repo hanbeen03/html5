@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <style>
+             * { border: "1px" solid rgb(167, 53, 53); }
+         </style>
+        <title>다중 예제</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>이한빈의 홈페이지에 오신 것을 환영합니다.</h1>
+            <dl>
+                <dt>메뉴</dt>
+                <dd>자기소개</dd>
+                <dd>경력 및 이력</dd>
+                <dd>앞으로의 포부</dd>
+            </dl>
+        </div><hr>
+        <div id="contentwrap">
+            <div id="signup">
+                <fieldset>
+                    <legend>회원가입</legend>
+                    <form>
+                        <p>이름 : <input type="text" /></p>
+                        <p>나이 : <input type="number" min="6" max="60" step="10" /></p>
+                        <p>아이디 : <input type="text" placeholder="아이디를 입력하세요" required /></p>
+                        <p>비밀번호 : <input type="password" placeholder="비밀번호를 입력하세요" required /></p>
+                        <p>전화번호 : <input type="tel" placeholder="-를 뺀 휴대폰번호를 입력하세요" required/></p>
+                        <p>자기소개 : <textarea cols="30" rows="20"></textarea></p>
+                        <p>바뀌지 않음 : <input type="text" value="이한빈" readonly /></p>
+                        <p>메일수신여부 : 
+                            <input type="radio" name="emailrecieve">yes
+                            <input type="radio" name="emailrecieve">no
+                        </p>
+                        <p>취미 :
+                            <input type="checkbox" name="hobby">수탉
+                            <input type="checkbox" name="hobby">곰이탱이여우
+                            <input type="checkbox" name="hobby">쯔양
+                        </p>
+                        <input type="submit" value="제출" />
+                        <input type="reset" value="초기화" />
+                        <input type="button" value="확인" />
+                    </form>
+                </fieldset>
+            </div>
+            <div id="table">
+                <table border="1px">
+                    <tr>
+                        <td colspan="3">가로겹치기</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">세로</td>
+                        <td>연습</td>
+                        <td>하기</td>
+                    </tr>
+                    <tr>
+                        <td>세로</td>
+                        <td>겹치기</td>
+                    </tr>
+                </table>
+            </div>
+        </div><hr>
+        <div id="footer">
+            <address>
+                <p>서울시 동대문구 서울시립대로</p>
+                <p>02-123-4567</p>
+                <p>COPYRIGHT &copy; NAVER</p>
+                <p>ALL RIGHTS RESERVED</p>
+            </address>
+        </div>
+    </body>
+</html>
